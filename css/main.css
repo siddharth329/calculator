@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Poppins', sans-serif;
+	background-color: beige;
+}
+
+.navbar {
+	padding: 2rem 4rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 5rem;
+}
+
+.calculator {
+	width: 32rem;
+	background-color: rgb(0, 0, 70);
+}
+
+.calculator__display {
+	height: 14rem;
+	color: white;
+	text-align: right;
+	padding: 3rem;
+}
+
+.calculator__numpad {
+	display: grid;
+	grid-template-columns: repeat(4, 8rem);
+	background-color: rgb(0, 0, 40);
+}
+
+.calculator__numkey {
+	height: 8rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 2rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.calculator__numkey:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.numkey--20::before {
+	content: "=";
+	position: absolute;
+	width: 6rem;
+	height: 6rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	height: 4rem;
+	width: 4rem;
+	margin-right: 1.2rem;
+}
+
+.source-link {
+	display: flex;
+	align-items: center;
+	color: black;
+	font-weight: 600;
+}
